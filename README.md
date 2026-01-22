@@ -77,6 +77,7 @@ Misclassified examples were collected and labeled with likely failure types (e.g
 This run can be reproduced end-to-end using the commands in `REPRO.md`.  
 Dependencies are captured in `requirements.txt`, and all outputs needed for review are included in this repository.
 
+**Note: Model artifacts are generated locally under artifacts/ but are not committed because GitHub rejects files larger than 100MB. The run can be reproduced using the commands in REPRO.md.**
 ---
 
 ## Why this structure

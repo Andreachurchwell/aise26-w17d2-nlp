@@ -1,0 +1,3 @@
+# LIMITATIONS
+
+This model was fine-tuned on a small subset (3,000 train / 800 eval) to meet time and hardware constraints, so results may not reflect full-dataset performance. The task was simplified to binary Sports vs Not Sports, which reduces realism compared to multi-class news classification. Slice evaluation uses heuristic rules (word-count buckets, simple negation keyword matching, and punctuation checks), so slice membership is approximate. The model can still fail on short or ambiguous headlines, negation phrasing, and cases where sports-related entities appear in non-sports contexts. Metrics are reported on one sampled eval subset without statistical testing.

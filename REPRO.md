@@ -2,9 +2,24 @@
 
 ## Environment
 - OS: Windows (Git Bash)
-- Python: (run `python --version` and paste here)
+- Python: 3.12.3
 - Hardware: laptop CPU (no GPU)
 - Libraries: see requirements.txt (frozen)
+
+
+## Dataset + Label Mapping
+
+This run uses the Hugging Face `ag_news` dataset.
+
+Original labels:
+- 0 = World
+- 1 = Sports
+- 2 = Business
+- 3 = Sci/Tech
+
+Binary mapping used:
+- Sports (1): original label == 1
+- Not Sports (0): original label in {0, 2, 3}
 
 ## Exact commands
 

@@ -25,10 +25,19 @@ Reasoning:
   - Not Sports = 0 (original labels 0,2,3)
 
 ## Evaluation slices (3)
-Computed on the same eval subset using simple rules stored with each record:
-1) Slice A (Length): short / mid / long based on word count
-2) Slice B (Negation): contains not/never/no/n't vs not
-3) Slice C (Punctuation): contains ! or ? vs not
+Computed on the same eval subset using simple, explicit rules stored with each record:
+
+1) Slice A (Length)
+   - Short: ≤ 8 words
+   - Mid: 9–20 words
+   - Long: > 20 words
+
+2) Slice B (Negation)
+   - Negation present if text contains any of:
+     {not, never, no, n't} (case-insensitive)
+
+3) Slice C (Punctuation)
+   - Emphasis present if text contains '!' or '?'
 
 ## Success metric
 Primary metric: Accuracy (with F1 as supporting metric)

@@ -29,4 +29,6 @@ runs/
 
 # Logs
 *.log
-printf "\n# Model artifacts (too large for GitHub)\nartifacts/\nruns/\n" >> .gitignore
+printf "\n# Model artifacts (too large for GitHub)\nartifacts/\nruns/\n" >> .gitignoreartifacts/
+runs/
+*.npy

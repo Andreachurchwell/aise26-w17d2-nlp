@@ -28,9 +28,9 @@ Reasoning:
 Computed on the same eval subset using simple, explicit rules stored with each record:
 
 1) Slice A (Length)
-   - Short: ≤ 8 words
-   - Mid: 9–20 words
-   - Long: > 20 words
+   - Short: ≤ 12 words
+   - Mid: 13–39 words
+   - Long: ≥ 40 words
 
 2) Slice B (Negation)
    - Negation present if text contains any of:
